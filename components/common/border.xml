@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="border" extends="Group">
+
+  <interface>
+    <field id="color" type="string" value="0xFFFFFF" alwaysNotify="true" onChange="onColorChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/common/border.brs" />
+
+  <children>
+      <Rectangle id="borderTop" width="1010" height="4" translation="[0, 0]" color="0xFFFFFF" />
+      <Rectangle id="borderLeft" width="4" height="132" translation="[0, 0]" color="0xFFFFFF" />
+      <Rectangle id="borderBottom" width="1010" height="4" translation="[0, 128]" color="0xFFFFFF" />
+      <Rectangle id="borderRight" width="4" height="132" translation="[1006, 0]" color="0xFFFFFF" />
+  </children>
+
+</component>

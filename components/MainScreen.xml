@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScreen" extends="Scene"> 
+	<interface>
+		<field id="content" type="assocarray" alwaysNotify="true" onChange="onContentUpdate" />
+	</interface>
+
+	<children>
+		<Rectangle color="0x000000" width="1920" height="1080" />
+
+		<LayoutGroup id="itemsContainer" 
+			layoutDirection="vert">
+        </LayoutGroup>
+
+		<Rectangle id="backgroundMainTitle" color="0x000000" width="1920" height="50" />
+
+		<Label id="mainTitle"  
+			horizAlign="left"
+			vertAlign="center"
+			translation="[135, 50]"
+			/>
+
+		<Animation 
+			id = "itemsContainerAnimation" 
+			duration = "0.25" 
+			easeFunction = "ease" >
+			
+			<Vector2DFieldInterpolator 
+				id="vectorInterpotator"
+				key = "[ 0.0, 1.0]" 
+				keyValue="[[0, 0], [0, 0]]"
+				fieldToInterp = "itemsContainer.translation" />
+		</Animation>
+    </children>
+
+	<script type="text/brightscript" uri="pkg:/components/MainScreen.brs" />
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="getApiDataTask" extends="Task">
+    <interface>
+        <field id="content" type="assocarray" />        
+        <field id="validatedContent" type="assocarray" alwaysNotify="true" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/task/getApiDataTask.brs" />
+</component>

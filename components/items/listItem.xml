@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="listItem" extends="Group">
+
+  <interface>
+    <field id="content" type="assocarray" alwaysNotify="true" onChange="onContentUpdate" />
+    <field id="height" type="float" value= "170"/>
+    <field id="objectType" type="string" value="listItem" />
+    <field id="width" type="float" />
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/items/listItem.brs" />
+
+  <children>
+      <Poster id="itemPoster" width="290" translation="[4, -22]"/>   
+
+      <Border id="border" translation="[0, -4]"/>
+
+      <Group>
+        <Label id="title" />
+        <Label id="subtitle" />
+        <Label id="description" width="680" maxlines="3" lineSpacing="-2" wrap="true"/>
+      </Group>
+  </children>
+
+</component>
